@@ -1,0 +1,20 @@
+.loading-indicator {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 2em 0;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: red;
+  margin: 2em 0;
+}
+
+.blog-post {
+  margin-bottom: 1em;
+}
+
+.blog-content {
+  margin-left: 1em;
+}

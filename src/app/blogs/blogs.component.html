@@ -1,0 +1,13 @@
+<section class="blogs">
+  <div *ngIf="isLoading" class="loading-indicator">Loading...</div>
+  <div *ngIf="!isLoading">
+    <div *ngFor="let blog of blogs" class="blog-post">
+      <img [src]="blog.imageUrl" alt="Blog Image" />
+      <div class="blog-content">
+        <p>{{ blog.title }}</p>
+        <span>By admin | {{ blog.date }}</span>
+      </div>
+    </div>
+    <button>View all</button>
+  </div>
+</section>

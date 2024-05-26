@@ -1,0 +1,22 @@
+.what-we-do {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+}
+
+.service {
+  flex: 1;
+  margin: 10px;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .what-we-do {
+    flex-direction: column;
+  }
+}

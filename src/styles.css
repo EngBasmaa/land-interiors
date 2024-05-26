@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+/* Basic styles for layout */
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+header .logo,
+footer .logo {
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+.buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.why-land-interiors,
+.what-we-do,
+.blogs {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-land-interiors .feature,
+.what-we-do .service,
+.blogs .blog-post {
+  margin-bottom: 20px;
+}
+
+.loading-indicator {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 2em 0;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+footer .contact-info {
+  text-align: left;
+}
+
+footer nav ul {
+  justify-content: center;
+}
+
+footer p,
+footer a {
+  color: #fff;
+}
