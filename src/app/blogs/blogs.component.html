@@ -1,13 +1,27 @@
 <section class="blogs">
-  <div *ngIf="isLoading" class="loading-indicator">Loading...</div>
-  <div *ngIf="!isLoading">
-    <div *ngFor="let blog of blogs" class="blog-post">
-      <img [src]="blog.imageUrl" alt="Blog Image" />
-      <div class="blog-content">
-        <p>{{ blog.title }}</p>
-        <span>By admin | {{ blog.date }}</span>
+  <p>Blogs</p>
+
+  <div class="border">
+    <!-- Loading indicator -->
+    <div class="loading-indicator" *ngIf="isLoading">Loading...</div>
+
+    <!-- Swiper container -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide card" *ngFor="let blog of blogs">
+          <img [src]="blog.image_path" alt="Blog Image" />
+          <div class="blog-content">
+            <p>{{ blog.title }}</p>
+            <span>By admin | {{ blog.date }}</span>
+          </div>
+        </div>
       </div>
+      <!-- Pagination and navigation -->
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
+  <!-- Blog posts and Swiper slides container -->
+  <div>
     <button>View all</button>
   </div>
 </section>

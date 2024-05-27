@@ -1,20 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
 .why-land-interiors {
-  display: flex;
-  justify-content: space-around;
+  max-width: 1200px;
+  margin: 8rem auto;
+  padding: 15px 15px;
+  background-color: #d8ebfc; /* Light background color */
   text-align: center;
-  padding: 20px;
+  border-radius: 3rem;
+  box-shadow: 10px 10px 40px 50px #d8ebfc;
 }
 
-.icon-text {
-  flex: 1;
+.why-land-interiors h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
 }
 
-.icon-text i {
-  font-size: 2em;
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.feature {
+  text-align: center;
+  margin: 20px;
+  width: 7rem;
+}
+
+.feature img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1em;
+  margin: 0;
+  color: #333;
+}
+
+.icon {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
-  .why-land-interiors {
-    flex-direction: column;
+  .features {
+    font-size: 70%;
+  }
+
+  .icon {
+    font-size: 1rem;
   }
 }

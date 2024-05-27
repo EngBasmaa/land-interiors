@@ -1,5 +1,6 @@
-/* Basic styles for layout */
-
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+}
 header,
 footer {
   display: flex;

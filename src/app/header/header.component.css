@@ -1,28 +1,89 @@
-.header {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  background-color: #f0f0f0d9;
 }
 
-.header .logo {
-  font-size: 1.5em;
+.logo img {
+  width: 5rem;
+  height: auto;
+  font-weight: bold;
 }
 
-.header .menu {
+.nav ul li {
   display: flex;
-  gap: 15px;
+  margin-top: 5rem;
 }
 
-.header .buttons {
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cta {
   display: flex;
-  gap: 10px;
 }
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
+.cta a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #42467e;
+}
+
+.cta a:hover {
+  background-color: #ddd;
+}
+
+.both-two {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+.burger {
+  visibility: hidden;
+  color: black;
+  font-size: 2rem;
+}
+
+.down_list {
+  display: none;
+}
+
+.burger:hover .down_list {
+  display: block;
+}
+
+/* .................. */
+
+@media (max-width: 1050px) {
+  .both-two {
+    visibility: hidden;
+  }
+
+  .burger {
+    visibility: visible;
   }
 }

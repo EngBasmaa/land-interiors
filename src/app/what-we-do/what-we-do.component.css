@@ -1,10 +1,30 @@
+.all {
+  margin-bottom: 4rem;
+}
+
+.all h1 {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
 .what-we-do {
   display: flex;
   justify-content: space-around;
   text-align: center;
   padding: 20px;
+  width: 60%;
+  margin: auto;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
+.text {
+  text-align: center;
+  justify-content: center;
+  width: 55%;
+  margin: auto;
+}
 .service {
   flex: 1;
   margin: 10px;
@@ -17,6 +37,16 @@
 
 @media (max-width: 768px) {
   .what-we-do {
-    flex-direction: column;
+    /* gap: 4rem; */
+    margin: auto;
+  }
+  .service img {
+    width: 150%;
+    height: auto;
+  }
+
+  .service {
+    width: 250%;
+    padding: 0;
   }
 }
